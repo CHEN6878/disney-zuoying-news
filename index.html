@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+   <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
@@ -58,8 +59,23 @@
         .main-content .meta {
             color: #666;
             font-size: 14px;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
+        .main-content .share-buttons {
+            margin: 10px 0;
+        }
+        .main-content .share-buttons a {
+            display: inline-block;
+            margin-right: 10px;
+            padding: 8px 15px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .main-content .share-buttons .facebook { background-color: #3b5998; }
+        .main-content .share-buttons .twitter { background-color: #1da1f2; }
+        .main-content .share-buttons .line { background-color: #00c300; }
         .main-content img {
             width: 100%;
             height: auto;
@@ -75,6 +91,32 @@
             font-size: 16px;
             line-height: 1.8;
             margin-bottom: 15px;
+        }
+        /* 相關報導區塊 */
+        .related-news {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+        .related-news h3 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .related-news ul {
+            list-style: none;
+            padding: 0;
+        }
+        .related-news ul li {
+            margin-bottom: 10px;
+        }
+        .related-news ul li a {
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .related-news ul li a:hover {
+            text-decoration: underline;
         }
         /* 側邊欄 */
         .sidebar {
@@ -105,6 +147,21 @@
         .sidebar ul li a:hover {
             text-decoration: underline;
         }
+        /* 廣告區塊 */
+        .ad-block {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .ad-block img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .ad-block .ad-label {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 5px;
+        }
         /* 頁尾 */
         footer {
             background-color: #430297;
@@ -134,24 +191,52 @@
         <div class="main-content">
             <h1>迪士尼樂園進軍高雄左營！打造亞洲第四座魔法王國</h1>
             <div class="meta">高雄訊 - 2025年4月1日 10:00</div>
-            <!-- 假設圖片（你需要上傳圖片到倉庫） -->
+            <!-- 分享按鈕 -->
+            <div class="share-buttons">
+                <a href="#" class="facebook">分享到 Facebook</a>
+                <a href="#" class="twitter">分享到 Twitter</a>
+                <a href="#" class="line">分享到 Line</a>
+            </div>
+            <!-- 假設圖片 -->
             <img src="https://via.placeholder.com/800x400.png?text=迪士尼左營魔法港" alt="迪士尼左營魔法港概念圖">
             <div class="caption">迪士尼左營魔法港概念圖（圖片來源：迪士尼官方）</div>
             <p>全球娛樂巨頭迪士尼公司今早宣布，將在台灣高雄市左營區打造一座全新的迪士尼樂園，名為「迪士尼左營魔法港」。這將是繼東京、上海和香港之後，亞洲第四座迪士尼主題樂園，預計於2028年盛大開幕。</p>
-            <p>這座樂園選址於左營軍港舊址旁，占地約60公頃，總投資金額高達20億美元 迪士尼左營魔法港將以「海洋與魔法」為主題，結合高雄港都特色與台灣在地文化，推出獨家遊樂設施，包括「高雄之眼摩天輪」、「珍珠奶茶魔法城堡」以及「阿里山森林探險列車」。</p>
-            <p>高雄市長陳其邁表示：「迪士尼的進駐將為高雄帶來超過50萬個就業機會，並吸引每年千萬名國際遊客，左營即將成為全球矚目的旅遊勝地！」</p>
-            <p>迪士尼亞太區總裁約翰·史密斯（John Smith）也透過視訊連線表示：「我們看中高雄的地理優勢與文化潛力，相信這裡會成為迪士尼家族的新驕傲。」</p>
+            <p>這座樂園選址於左營軍港舊址旁，占地約60公頃，總投資金額高達20億美元。迪士尼左營魔法港將以「海洋與魔法」為主題，結合高雄港都特色與台灣在地文化，推出獨家遊樂設施，包括「高雄之眼摩天輪」、「珍珠奶茶魔法城堡」以及「阿里山森林探險列車」。此外，園區還將設有全台首座迪士尼主題飯店，提供遊客沉浸式的住宿體驗。</p>
+            <p>高雄市長陳其邁在記者會上表示：「迪士尼的進駐將為高雄帶來超過50萬個就業機會，並吸引每年千萬名國際遊客，左營即將成為全球矚目的旅遊勝地！」他進一步透露，市政府已與迪士尼簽署合作備忘錄，未來將共同推動高雄旅遊產業升級，包括改善交通基礎設施和提升周邊環境。</p>
+            <p>迪士尼亞太區總裁約翰·史密斯（John Smith）透過視訊連線表示：「我們看中高雄的地理優勢與文化潛力，相信這裡會成為迪士尼家族的新驕傲。」他還提到，迪士尼計劃在樂園開幕後，推出以台灣原住民文化為靈感的特別表演，展現對在地文化的尊重與融合。</p>
+            <h2>居民反應：期待與擔憂並存</h2>
+            <p>對於迪士尼進駐左營，當地居民反應不一。左營區居民林小姐表示：「我很期待樂園開幕，這樣就不用出國也能體驗迪士尼的魔法！而且這對高雄的經濟一定有很大幫助。」然而，也有居民擔心建設期間的交通與噪音問題。居民陳先生說：「希望政府能妥善規劃，不要讓我們的生活受到太大影響。」</p>
+            <h2>專家分析：高雄旅遊新篇章</h2>
+            <p>旅遊業專家張教授指出，迪士尼樂園的進駐將為高雄開啟旅遊新篇章。「高雄近年來積極發展觀光產業，迪士尼的加入將進一步提升國際知名度，吸引更多東南亞和歐美遊客。」他預估，樂園開幕後，高雄每年旅遊收入可能增加30%以上。</p>
+            <p>此外，專家也建議市政府應同步規劃周邊配套，例如增加高鐵班次、擴建停車場，以及推出旅遊套票，確保遊客有最佳體驗。</p>
+            <h2>未來展望：迪士尼效應持續發酵</h2>
+            <p>除了迪士尼樂園本身，相關產業也開始摩拳擦掌。據悉，已有多家國際連鎖飯店計畫在左營設點，預計未來五年內，當地將新增至少10家五星級酒店。此外，高雄市政府也計畫推出「迪士尼旅遊專線」，串聯旗津、蓮池潭等景點，讓遊客能一覽高雄之美。</p>
             <p>更多細節將於下個月公布，敬請期待！</p>
+            <!-- 相關報導區塊 -->
+            <div class="related-news">
+                <h3>更多相關報導</h3>
+                <ul>
+                    <li><a href="#">迪士尼樂園選址左營軍港舊址，背後有何考量？</a></li>
+                    <li><a href="#">高雄房價飆升？迪士尼效應提前顯現</a></li>
+                    <li><a href="#">珍珠奶茶魔法城堡曝光！網友：太可愛了</a></li>
+                    <li><a href="#">高雄旅遊業準備好了嗎？專家這樣說</a></li>
+                </ul>
+            </div>
         </div>
 
         <!-- 側邊欄 -->
         <div class="sidebar">
-            <h3>相關新聞</h3>
+            <h3>熱門新聞</h3>
             <ul>
                 <li><a href="#">高雄旅遊熱潮再起！迪士尼進駐帶動經濟</a></li>
                 <li><a href="#">迪士尼新樂園有哪些亮點？搶先看</a></li>
                 <li><a href="#">左營居民怎麼看？迪士尼樂園引發熱議</a></li>
             </ul>
+            <!-- 廣告區塊 -->
+            <div class="ad-block">
+                <div class="ad-label">廣告</div>
+                <img src="https://via.placeholder.com/300x250.png?text=廣告" alt="廣告">
+            </div>
         </div>
     </div>
 
